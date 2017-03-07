@@ -1,0 +1,139 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+
+$baseColor: #fdfcf6;
+$subColor: #bea300;
+$keyColor: #14c0c9;
+$fontColor: #4c4c4c;
+
+
+html{ font-size: 62.5%; }
+
+body{
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height:1.6;
+  letter-spacing: 0.1em; 
+  background-color: $baseColor;
+}
+
+a {
+  @include link-colors($keyColor, darken($keyColor, 10%), lighten($keyColor, 5%), darken($keyColor, 10%));
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+section .container, #bolivia {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.abel {
+  font-family: 'Abel', sans-serif;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.landscape {
+  background-image: url("images/sky4.jpg");
+  height: 250px;
+  background-size: cover;
+  background-position: center 70%;
+}
+
+@media(min-width: 1025px){
+  max-height: 500px;
+}
+
+section {
+  padding: 60px 0;
+  .container {
+    width: 90%;
+  }
+  h1 {
+    @extend .abel;
+    font-size: 3.2rem;
+    @extend .uppercase;
+  }
+}
+
+#bolivia{
+  background-color: $subColor;
+  .container {
+    @include display-flex;
+    justify-content: space-between;
+    @include flex-direction(column);    
+  }
+  h1 {
+    color: $baseColor;
+    margin-bottom: 60px;
+  }
+  .sky-box {
+    @include flex(1);
+    margin: 10px 0;   
+    padding: 20px;
+    background-color: $baseColor;
+    @include box-sizing(border-box);
+  }
+    
+  h2 {
+    @extend .abel;
+    @extend .uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    height: auto;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    background-color: $keyColor;
+    color: #FFF;
+    text-align: center;
+    
+  }
+  p{
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1025px) {
+  #bolivia {
+    .container {
+      @include flex-direction(row);     
+      justify-content: space-between;
+    }
+    .sky-box {
+      margin: 0 10px;   
+    }
+  }
+}
+
+#contact {
+  h1 {
+    margin-bottom: 60px;
+  }
+  .question {
+    background-color: $subColor;
+    color: $baseColor;
+    font-size: 2.4rem;
+    font-weight: bold;
+    display: block;
+    border: 2px solid;
+    width: 200px;
+    padding: 20px;
+    margin: 0 auto;
+    a:visited {
+      color: #857200;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .question:hover{
+    background-color: #857200;
+  }
+}

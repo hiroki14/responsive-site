@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+a {
+  color: #14c0c9;
+  text-decoration: none; }
+  a:visited {
+    color: #0f949b; }
+  a:hover {
+    color: #0f949b; }
+  a:active {
+    color: #16d6e0; }
+
+.text-center {
+  text-align: center; }
+
+section .container, #bolivia {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.abel, section h1, #bolivia h2 {
+  font-family: 'Abel', sans-serif; }
+
+.uppercase, section h1, #bolivia h2 {
+  text-transform: uppercase; }
+
+.landscape {
+  background-image: url("images/sky4.jpg");
+  height: 250px;
+  background-size: cover;
+  background-position: center 70%; }
+
+@media (min-width: 1025px) {
+  max-height: 500px; }
+section {
+  padding: 60px 0; }
+  section .container {
+    width: 90%; }
+  section h1 {
+    font-size: 3.2rem; }
+
+#bolivia {
+  background-color: #bea300; }
+  #bolivia .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  #bolivia h1 {
+    color: #fdfcf6;
+    margin-bottom: 60px; }
+  #bolivia .sky-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #fdfcf6;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  #bolivia h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    height: auto;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    background-color: #14c0c9;
+    color: #FFF;
+    text-align: center; }
+  #bolivia p {
+    font-size: 1.6rem; }
+
+@media (min-width: 1025px) {
+  #bolivia .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #bolivia .sky-box {
+    margin: 0 10px; } }
+#contact h1 {
+  margin-bottom: 60px; }
+#contact .question {
+  background-color: #bea300;
+  color: #fdfcf6;
+  font-size: 2.4rem;
+  font-weight: bold;
+  display: block;
+  border: 2px solid;
+  width: 200px;
+  padding: 20px;
+  margin: 0 auto; }
+  #contact .question a:visited {
+    color: #857200; }
+
+@media (min-width: 1025px) {
+  .question:hover {
+    background-color: #857200; } }
+
+/*# sourceMappingURL=style.css.map */
