@@ -48,7 +48,7 @@ section .container, #bolivia {
   background-position: center 70%;
 }
 
-@media(min-width: 1025px){
+@media(min-width: 769px){
   max-height: 500px;
 }
 
@@ -100,7 +100,7 @@ section {
     font-size: 1.6rem;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 769px) {
   #bolivia {
     .container {
       @include flex-direction(row);     
@@ -126,13 +126,14 @@ section {
     width: 200px;
     padding: 20px;
     margin: 0 auto;
+    border-radius: 10px;
     a:visited {
       color: #857200;
     }
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 769px) {
   .question:hover{
     background-color: #857200;
   }

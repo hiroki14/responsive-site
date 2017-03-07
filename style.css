@@ -41,7 +41,7 @@ section .container, #bolivia {
   background-size: cover;
   background-position: center 70%; }
 
-@media (min-width: 1025px) {
+@media (min-width: 769px) {
   max-height: 500px; }
 section {
   padding: 60px 0; }
@@ -82,7 +82,7 @@ section {
   #bolivia p {
     font-size: 1.6rem; }
 
-@media (min-width: 1025px) {
+@media (min-width: 769px) {
   #bolivia .container {
     -webkit-flex-direction: row;
     flex-direction: row;
@@ -100,11 +100,12 @@ section {
   border: 2px solid;
   width: 200px;
   padding: 20px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border-radius: 10px; }
   #contact .question a:visited {
     color: #857200; }
 
-@media (min-width: 1025px) {
+@media (min-width: 769px) {
   .question:hover {
     background-color: #857200; } }
 
